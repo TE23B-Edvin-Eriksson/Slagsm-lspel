@@ -10,7 +10,7 @@ string champion2;
 Console.WriteLine("Skriv namn för 2 olika champions.");
 champion1 = Console.ReadLine();
 champion2 = Console.ReadLine();
-while (champion1 == " " || champion2 == "")
+while (champion1 == "" || champion2 == "")
  {
     if (champion1 == "")
     {
@@ -26,7 +26,16 @@ while (champion1 == " " || champion2 == "")
     }
  }
 
-//Console.WriteLine($"Välkommen till UFC 420 där {champion1} och {champion2} möts i en episk strid!");
+
+// Intro och påbörjan av koden
+
+
+Random generator = new Random(1,4);
+
+Console.WriteLine($"Välkommen till UFC 420 där {champion1} och {champion2} möts i en episk strid!");
+Console.WriteLine("");
+while (champion1hp > 0 || champion2hp > 0)
+
 
 Console.ReadLine();
 
